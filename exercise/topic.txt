@@ -17,3 +17,12 @@ ISBN 978-7-115-14731-8/TP
 
 3.2 编写一个与 3.12 节中 dup2 功能相同的函数，要求不调用 fcntl 函数，并且要有正
     确的出错处理。
+
+3.3 假设一个进程执行下面的 3 个函数调用：
+
+    fd1 = open(pathname, oflags);
+    fd2 = dup(fd1);
+    fd3 = open(pathname, oflags);
+
+    画出类似于图 3-3 的结果图。对 fcntl 作用于 fd1 来说，F_SETFD 命令会影响哪一
+    个文件描述符？F_SETFL 呢？
