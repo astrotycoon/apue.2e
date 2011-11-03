@@ -37,3 +37,12 @@ ISBN 978-7-115-14731-8/TP
 
     为了说明 if 语句的必要性，假设 fd 是 1，画出每次调用 dup2 时 3 个描述符及相
     应的文件表项的变化情况。然后再画出 fd 为 3 的情况。
+
+3.5 在 Bourne shell、Bourne-again shell 和 Korn shell 中，digit1>&digit2 表示要
+    将描述符 digit1 重定向至描述符 digit2 的同一文件。请说明下面两条命令的区别。
+
+    ./a.out > outfile 2>&1
+
+    ./a.out 2>&1 > outfile
+
+    （提示：shell 从左到右处理命令行。）
