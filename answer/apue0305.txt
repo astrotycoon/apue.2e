@@ -1,0 +1,22 @@
+3.5 在 Bourne shell、Bourne-again shell 和 Korn shell 中，digit1>&digit2 表示要
+    将描述符 digit1 重定向至描述符 digit2 的同一文件。请说明下面两条命令的区别。
+
+    ./a.out > outfile 2>&1
+
+    ./a.out 2>&1 > outfile
+
+    （提示：shell 从左到右处理命令行。）
+
+个人解答：
+
+    ./a.out > outfile 2>&1
+
+相当于：
+    dup2(outfile_fd, 1);
+    dup2(1, 2);
+
+    ./a.out 2>&1 > outfile
+
+相当于：
+    dup2(1, 2);
+    dup2(outfile_fd, 1);
