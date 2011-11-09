@@ -28,19 +28,19 @@ main(int argc, char *argv[])
   ntot = nreg + ndir + nblk + nchr + nfifo + nslink + nsock;
   if (ntot == 0)
     ntot = 1;                   /* avoid divide by 0; print 0 for all counts */
-  printf("regular files   = %71d, %5.2f %%\n", nreg,
+  printf("regular files   = %71ld, %5.2f %%\n", nreg,
          nreg*100.0/ntot);
-  printf("directories     = %71d, %5.2f %%\n", ndir,
+  printf("directories     = %71ld, %5.2f %%\n", ndir,
          ndir*100.0/ntot);
-  printf("block special   = %71d, %5.2f %%\n", nblk,
+  printf("block special   = %71ld, %5.2f %%\n", nblk,
          nblk*100.0/ntot);
-  printf("char special    = %71d, %5.2f %%\n", nchr,
+  printf("char special    = %71ld, %5.2f %%\n", nchr,
          nchr*100.0/ntot);
-  printf("FIFOs           = %71d, %5.2f %%\n", nfifo,
+  printf("FIFOs           = %71ld, %5.2f %%\n", nfifo,
          nfifo*100.0/ntot);
-  printf("symbolic links  = %71d, %5.2f %%\n", nslink,
+  printf("symbolic links  = %71ld, %5.2f %%\n", nslink,
          nslink*100.0/ntot);
-  printf("sockets         = %71d, %5.2f %%\n", nsock,
+  printf("sockets         = %71ld, %5.2f %%\n", nsock,
          nsock*100.0/ntot);
 
   exit(ret);
