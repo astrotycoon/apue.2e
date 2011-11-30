@@ -1,3 +1,9 @@
+/*
+ * 程序清单 1-1 列出一个目录中的所有文件
+ *
+ * ls(1) 命令的简要实现。
+ */
+
 #include "apue.h"
 #include <dirent.h>
 
@@ -18,3 +24,5 @@ main(int argc, char *argv[])
     closedir(dp);
     exit(0);
 }
+
+/* figure1-1.c ends here */
