@@ -1,3 +1,7 @@
+/*
+ * 程序清单 1-2 将标准输入复制到标准输出
+ */
+
 #include "apue.h"
 
 #define BUFFSIZE 4096
@@ -17,3 +21,5 @@ main(void)
 
   exit(0);
 }
+
+/* figure2-1.c ends here */
