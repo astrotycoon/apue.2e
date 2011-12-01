@@ -1,3 +1,7 @@
+/*
+ * 程序清单 1-3 用标准输入复制到标准输出
+ */
+
 #include "apue.h"
 
 int
@@ -13,3 +17,5 @@ main(void)
 
   exit(0);
 }
+
+/* figure1-3.c ends here */
