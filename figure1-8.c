@@ -1,3 +1,7 @@
+/*
+ * 程序清单 1-8 从标准输入读命令并执行
+ */
+
 #include "apue.h"
 #include <sys/wait.h>
 
@@ -39,3 +43,5 @@ sig_int(int signo)
 {
   printf("interrupt\n%% ");
 }
+
+/* figure1-8.c ends here */
